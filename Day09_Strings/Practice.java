@@ -37,3 +37,4 @@ public class Practice {
         System.out.println("Substring: " + fullName.substring(0, 7));
     }
 }
+//It's the simple java program done for practice of string.
