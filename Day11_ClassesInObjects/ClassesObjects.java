@@ -1,28 +1,17 @@
-class Student {
+public class ClassesObjects{
+    public static void main(String[] args){
+        int n=4;
 
-    // Properties
-    String name;
-    int rollNumber;
-    double marks;
+        for(int i=1; i<=n; i++){
+            for (int j=1; j<=n-i; j++){
+                System.out.print("  ");
+            }
 
-    // Method
-    void displayDetails() {
-        System.out.println("Name: " + name);
-        System.out.println("Roll Number: " + rollNumber);
-        System.out.println("Marks: " + marks);
+            for(int j=1; j<=i; j++);{
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
     }
-
-    public static void main(String[] args) {
-
-        // Creating an object
-        Student student1 = new Student();
-
-        // Assigning values
-        student1.name = "Darshan";
-        student1.rollNumber = 101;
-        student1.marks = 85.5;
-
-        // Calling method
-        student1.displayDetails();
     }
-}
