@@ -1,20 +1,12 @@
-public class Practice {
-    public static void main(String[] args) {
-        try {
-            int a = 10;
-            int b = 0;
+public class Practice{
+    public static void main(String[]args){
+        int n = 400;
 
-            int result = a / b; // ArithmeticException
-            System.out.println("Result: " + result);
-
-        } catch (ArithmeticException e) {
-            System.out.println("Error: Cannot divide by zero.");
-            System.out.println("Exception: " + e);
-
-        } finally {
-            System.out.println("Finally block executed.");
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
         }
-
-        System.out.println("Program continues...");
     }
 }
